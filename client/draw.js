@@ -15,7 +15,7 @@ function circle(x, y, r) {
 }
 
 function etriangle(x, y, h, angle) { //r in radians
-    let theta = angle - Math.PI / 2
+    let theta = angle
     ctx.beginPath();
     let halfside = (h / (3 ** .5));
     ctx.moveTo(offX(x) + halfside * Math.cos(Math.PI / 2 + theta), offY(y) + halfside * Math.sin(Math.PI / 2 + theta));
